@@ -59,7 +59,7 @@ IChatClient chatClient =
 ```
 
 ## Demo 3: Embeddings
-
+```csharp
 // Create the embedding generator
 IEmbeddingGenerator<string, Embedding<float>> generator = new OpenAIClient(new ApiKeyCredential(key))
 			.AsEmbeddingGenerator(modelId: modelEmbedding);
@@ -98,7 +98,7 @@ while (true)
 		Console.WriteLine();
 	}
 }
-
+```
 
 
 ollama run phi3:mini
